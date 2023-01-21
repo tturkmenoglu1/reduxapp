@@ -3,16 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const localeSlice = createSlice({
     name: "locale",
-    initialState: {
+    initialState:{
         lang: "en",
-        currency:"usd"
+        currency: "usd"
     },
-    reducers: {
-        setLang: (state,action) => {
-            state.lang =action.payload
+    reducers:{
+        setLang: (state, action)=>{
+            state.lang = action.payload;
         }
     }
-})
+});
 
-export const { setLang } = localeSlice.actions
+export const { setLang } = localeSlice.actions;
 export default localeSlice.reducer;
